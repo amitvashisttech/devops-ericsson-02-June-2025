@@ -1,0 +1,9 @@
+# Cleaning up working Dir. 
+
+   34  git status
+   35  git clean
+   36  git clean -n
+   37  ls
+   38  git status
+   39  git clean -f
+

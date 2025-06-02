@@ -1,0 +1,13 @@
+# Undo & Redo in Git. 
+
+   14  git reset --soft HEAD~1
+   15  git log
+   16  ls
+   17  git reset --hard HEAD~1
+   18  git log
+   19  ls
+   20  git reset --hard d01e11e22a9ef77f0667d86d577216d0b6d0cfce
+   21  ls
+   22  git log
+   23  git reset --hard 593600c5c74c7e728f802ff2cd38ed7a8e72df8c
+   25  git reset --hard d01e11e22a9ef77f0667d86d577216d0b6d0cfce
