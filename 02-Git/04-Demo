@@ -1,0 +1,12 @@
+# Clone, Logs & Graph 
+
+   75  git clone https://github.com/amitvashisttech/devops-ericsson-02-June-2025.git
+   76  ls
+   77  cd devops-ericsson-02-June-2025/
+   78  ls
+   79  ls -a
+   80  ls
+   81  git log
+   82  git log --oneline
+   83  git log --oneline --graph
+
