@@ -1,0 +1,50 @@
+   57  mkdir myfisrtrepo
+   61  cd myfisrtrepo/
+   64  git init
+   66  ls -a
+   67  apt-get update ; apt-get install tree -y
+   68  ls
+   69  tree .
+   70  tree .git/
+   71  ls
+   72  git status
+   76  echo "Welcome to the world of Git" > hello.txt
+   77  git status
+   78  echo "Welcome to DevOps Traning" > DevOps_ToC.txt
+   79  git status
+   80  git add hello.txt
+   81  git status
+   82  git commit -m "First Commit - New file Hello.txt"
+   83  git status
+   84  git commit
+   85  git status -a
+   87  git  log
+   88  ls
+   89  git status
+   90  git add .
+   91  git status
+   92  git commit -m "Second Commit - New file DevOps_Toc.txt"
+   93  git status
+   94  git  log
+   95  ls
+   96  vim DevOps_ToC.txt
+   97  ls
+   98  git status
+   99  git add .
+  100  git status
+  101  git logs
+  102  git log
+  103  git commit -m "DevOps Intro"
+  104  git log
+  105  ls
+  106  echo "Apple Pie"
+  107  echo "Apple Pie" | git hash-object
+  108  echo "Apple Pie" | git hash-object --stdin
+  109  echo "Apple Pie" | git hash-object --stdin -w
+  110  git cat-file 23991897e13e47ed0adb91a0082c31c82fe0cbe5 -t
+  111  git cat-file 23991897e13e47ed0adb91a0082c31c82fe0cbe5 -p
+  112  echo "Apple PiE" | git hash-object --stdin -w
+  113  git cat-file 9a1a79d3841d891b82d868d04f1bf6d8f1f8e2da -p
+  114  tree .git/
+  115  ls
+
