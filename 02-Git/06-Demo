@@ -1,0 +1,75 @@
+# Git Branch & Merge
+
+121  git branch
+  122  git branch -r
+  123  git tags
+  124  git tag
+  125  git branch qa
+  126  git branch
+  127  git branch stage
+  128  git branch prod
+  129  git branch
+  130  git checkout qa
+  131  git branch
+  132  git log
+  133  ls
+  134  echo "Welcome to QA Branch" > Qa.txt
+  135  ls
+  136  git add .
+  137  git commit -m "QA - First Commit
+"
+  138  git log
+  139  echo "Welcome to QA Branch - Test 2 " >> Qa.txt
+  140  git commit -m "QA - Second Commit
+"
+  141  git add . ; git commit -m "QA - Second Commit
+"
+  142  git log
+  143  git branch
+  144  git checkout stage
+  145  echo "Welcome to Stage Branch" >> Stage.txt
+  146  git commit -m "Stage - First Commit
+"
+  147  git add . ; git commit -m "Stage - First Commit
+"
+  148  git log
+  149  ls
+  150  git branch
+  151  git checkout prod
+  152  echo "Welcome to Prod Branch" >> Prod.txt
+  153  git add . ; git commit -m "Prod - First Commit"
+  154  echo "Welcome to Prod Branch Test -1 " >> Prod.txt
+  155  git add . ; git commit -m "Prod - Test -1"
+  156  echo "Welcome to Prod Branch Test -2 " >> Prod.txt
+  157  git add . ; git commit -m "Prod - Test -2"
+  158  echo "Welcome to Prod Branch Test -3 " >> Prod.txt
+  159  git add . ; git commit -m "Prod - Test -3"
+  160  echo "Welcome to Prod Branch Test -4 " >> Prod.txt
+  161  git add . ; git commit -m "Prod - Test -4"
+  162  echo "Welcome to Prod Branch Test -5 " >> Prod.txt
+  163  git add . ; git commit -m "Prod - Test -5"
+  164  git log
+  165  git log --oneline
+  166  git log --oneline --graph
+  167  git push
+  168  git push --set-upstream origin prod
+  169  git checkout stage
+  170  git push --set-upstream origin stage
+  171  git checkout qa
+  172  git push --set-upstream origin qa
+  173  ls
+  174  git checkout main
+  175*
+  176  git log --oneline --graph
+  177  git merge qa
+  178  ls
+  179  git log --oneline --graph
+  180  git log  --graph
+  181  git merge stage
+  182  git log  --graph
+  183  git log --oneline --graph
+  184  git merge prod
+  185  git log --oneline --graph
+  186  git push
+  187  git checkout prod
+
