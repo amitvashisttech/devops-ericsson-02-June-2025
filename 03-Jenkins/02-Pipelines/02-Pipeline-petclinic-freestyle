@@ -1,0 +1,23 @@
+New Job 
+    -> Freestyle 
+	   Name : Petclinic-Freestyle
+	
+SCM:
+    -> Git 
+	   Repo : https://github.com/amitvashisttech/devops-ericsson-02-June-2025.git
+	   Branch : main 
+
+Build Step 
+     -> Excute Shell 
+	 ```
+	 cd 04-AppCode/
+	 ./mvnw clean
+     ./mvnw compile
+     ./mvnw package
+	 ```
+	 
+Post Build Action:
+    -> Archive Artifacts 
+    ```
+     04-AppCode/target/spring-petclinic-3.4.0-SNAPSHOT.jar
+    ```	 
