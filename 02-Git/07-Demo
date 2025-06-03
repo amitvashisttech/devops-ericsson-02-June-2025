@@ -1,0 +1,22 @@
+  205  git tag
+  206  git tag release_v1.0
+  207  git tag
+  208  git push --tags
+  209  git log
+  210  ls
+  211  echo "Welcome to Git Tag Demo - 1" > Tag.txt
+  212  git add . ; git commit -m "Git Tag Demo" ; git push
+  213  git log
+  214  echo "Welcome to Git Tag Demo - 2" >> Tag.txt
+  215  git add . ; git commit -m "Git Tag Demo" ; git push
+  216  echo "Welcome to Git Tag Demo - 3" >> Tag.txt
+  217  git add . ; git commit -m "Git Tag Demo" ; git push
+  218*
+  219  git tag release_v2.0
+  220  git add . ; git commit -m "Git Tag Demo" ; git push
+  221  git push --tags
+  222  cd
+  223  cd /tmp/
+  224  ls
+  225  git clone -b  release_v1.0  https://github.com/amitvashisttech/devops-ericsson-02-June-2025.git
+
