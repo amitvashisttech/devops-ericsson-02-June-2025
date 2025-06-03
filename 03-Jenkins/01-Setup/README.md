@@ -18,9 +18,15 @@ sudo su -
 ```
 
 ### Now you can access the Jenkins via Web Brower, Please go ahead & Complete the Setup process 
-
+```
+  http://172.31.0.100:9090
+```
 
 ### Get the initial Credentials
 ```
   docker exec -it   jenkins-2 cat /var/jenkins_home/secrets/initialAdminPassword
 ```
+
+### Install Suggested Plugins 
+
+### Create your first user.
