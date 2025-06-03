@@ -24,7 +24,7 @@ sudo su -
 
 ### Get the initial Credentials
 ```
-  docker exec -it   jenkins-2 cat /var/jenkins_home/secrets/initialAdminPassword
+  docker exec -it   jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 
 ### Install Suggested Plugins 
