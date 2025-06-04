@@ -1,7 +1,0 @@
-# viewing Commits 
-
-git show HEAD 
-git show HEAD~1
- 
-git show HEAD~3
-
