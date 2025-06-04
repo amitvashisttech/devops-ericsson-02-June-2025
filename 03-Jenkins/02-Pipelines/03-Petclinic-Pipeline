@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Git CheckOut') {
+            steps {
+                git branch: 'main', url: 'https://github.com/amitvashisttech/devops-ericsson-02-June-2025.git'
+            }
+        }
+       stage('Mvn CleanUp') {
+            steps {
+                sh './04-AppCode/mvnw clean -f 04-AppCode/pom.xml'
+            }
+        }
+       stage('Mvn Compile') {
+            steps {
+                sh './04-AppCode/mvnw compile -f 04-AppCode/pom.xml'
+            }
+        }
+       stage('Mvn Package') {
+            steps {
+                sh './04-AppCode/mvnw package -f 04-AppCode/pom.xml'
+            }
+        }
+        
+        
+       stage('Archive Artifacts') {
+            steps {
+               archiveArtifacts artifacts: '04-AppCode/target/spring-petclinic-3.4.0-SNAPSHOT.jar', followSymlinks: false
+            }
+       }    
+    }
+}
+
