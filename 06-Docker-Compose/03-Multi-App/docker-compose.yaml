@@ -1,0 +1,20 @@
+---
+
+nginx-1:
+  image: nginx:latest
+  ports:
+    - '9095:80'
+
+
+
+nginx-2:
+  image: nginx:latest
+  ports:
+    - '9096:80'
+
+
+
+nginx-3:
+  image: nginx:latest
+  ports:
+    - '9097:80'

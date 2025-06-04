@@ -4,11 +4,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloController {
+public class HelloWorldController {
 
-    @GetMapping("/hello")
+    @GetMapping("/")
     public String hello() {
-        return "Hello from Jenkins Demo!";
+        return "Hello, World from Tomcat 11 with Spring Boot and JDK 21!";
     }
 }
 
