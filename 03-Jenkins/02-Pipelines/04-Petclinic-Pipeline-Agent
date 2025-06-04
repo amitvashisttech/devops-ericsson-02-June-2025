@@ -29,7 +29,7 @@ pipeline {
         
        stage('Archive Artifacts') {
             steps {
-               archiveArtifacts artifacts: '04-AppCode/target/spring-petclinic-3.4.0-SNAPSHOT.jar', followSymlinks: false
+               archiveArtifacts artifacts: '04-AppCode/target/*.jar', followSymlinks: false
             }
        }    
     }
