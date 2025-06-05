@@ -8,7 +8,7 @@ public class HelloWorldController {
 
     @GetMapping("/")
     public String hello() {
-        return "Welcome to Jenkins CI/CD workflow - Powered by Docker,Tomcat 11, Spring Boot and JDK 21!";
+        return "Welcome to Jenkins CI/CD workflow";
     }
 }
 
