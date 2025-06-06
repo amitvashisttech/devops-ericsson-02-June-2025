@@ -1,0 +1,30 @@
+---
+
+# This is my first playbook 
+# And the following is my first play 
+
+- hosts: all
+  name: "Disable Firewall - PLAY"
+  tasks:
+  - name: Disable UFW Firewall
+    service: name=ufw state=stopped 
+
+
+
+- hosts: web
+  name: "WebServer Deployment - PLAY"
+  tasks:
+  - name: Install Apache2 Packages
+    apt: name=apache2 state=present
+
+  - name: Install Tree Packages
+    apt: name=tree state=present
+
+  - name: Install Net-Tools Packages
+    apt: name=net-tools state=present
+
+  - name: Deploy Custom Web Page
+    copy: src=files/index.html dest=/var/www/html/
+
+  - name: Start Apache Service
+    service: name=apache2 state=started
