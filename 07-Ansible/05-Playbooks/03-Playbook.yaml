@@ -1,0 +1,9 @@
+---
+
+- hosts: web
+  tasks:
+  - name: Install Tree Package 
+    apt: name=tree state=present 
+
+  - name: Install Net Tools Packages   
+    apt: name=net-tools state=present 
